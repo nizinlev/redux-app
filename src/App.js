@@ -88,7 +88,7 @@ function App() {
   return (
     <div className="App">
       {note &&<Notification type={note.type} message={note.message}/>}
-      <BrowserRouter basename='redux-app'>
+      <BrowserRouter basename='/redux-app'>
       {showMenu()}
         <Routes>
           <Route path='/redux-app/' element={flagReg ? <Registe/> : <LogIn/>}></Route>
