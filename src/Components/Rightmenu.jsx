@@ -21,10 +21,10 @@ function Rightmenu(props) {
   return (
     <div className='optionMenu' style={{display: displayFlag()}}>
         <ul className='ulMenu' >
-         <li className='liMenu'><Link to={`/redux-app/home+${link}`}><h2 onClick={()=>changeType('home')}>home</h2></Link></li>
-         <li className='liMenu'><Link to={`/redux-app/headphones+${link}`}><h2 onClick={()=>changeType('headphones')}>headphones</h2></Link></li>
-         <li className='liMenu'><Link to={`/redux-app/cameras+${link}`}><h2 onClick={()=>changeType('cameras')}>cameras</h2></Link></li>
-         <li className='liMenu'><Link to={`/redux-app/favorites+${link}`} onClick={()=>{props.showBurger()}}><h2>my favorites</h2></Link></li>
+         <li className='liMenu'><Link to={`/home+${link}`}><h2 onClick={()=>changeType('home')}>home</h2></Link></li>
+         <li className='liMenu'><Link to={`/headphones+${link}`}><h2 onClick={()=>changeType('headphones')}>headphones</h2></Link></li>
+         <li className='liMenu'><Link to={`/cameras+${link}`}><h2 onClick={()=>changeType('cameras')}>cameras</h2></Link></li>
+         <li className='liMenu'><Link to={`/favorites+${link}`} onClick={()=>{props.showBurger()}}><h2>my favorites</h2></Link></li>
         </ul>
     </div>
   )

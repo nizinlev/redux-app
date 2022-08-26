@@ -91,11 +91,11 @@ function App() {
       <BrowserRouter basename='/redux-app'>
       {showMenu()}
         <Routes>
-          <Route path='/redux-app/' element={flagReg ? <Registe/> : <LogIn/>}></Route>
-          <Route path={`/redux-app/home+${link}`} element={<Layout/>}></Route>
-          <Route path={`/redux-app/headphones+${link}`} element={<Layout/>}></Route>
-          <Route path={`/redux-app/cameras+${link}`} element={<Layout/>}></Route>
-          <Route path={`/redux-app/favorites+${link}`} element={<Favourites/>}></Route>
+          <Route path='/' element={flagReg ? <Registe/> : <LogIn/>}></Route>
+          <Route path={`/home+${link}`} element={<Layout/>}></Route>
+          <Route path={`/headphones+${link}`} element={<Layout/>}></Route>
+          <Route path={`/cameras+${link}`} element={<Layout/>}></Route>
+          <Route path={`/favorites+${link}`} element={<Favourites/>}></Route>
 
 
         </Routes>
